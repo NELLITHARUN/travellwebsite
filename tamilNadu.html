@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travel Packages </title>
+ <link rel="stylesheet" href="packages.css">
+   <script src="package.js"></script>
+</head>
+  <body style="background-color:#FAFAFF">
+    <header>
+<div class="menubar">
+  <img  style="height:110px;width:120px;border-radius:50px;margin-right:1200px;margin-bottom:200px;" src="logo.png" alt="logo" /> 
+<div class="menubar1"> 
+</div>
+<h1 id="pra">Prajaya Travels </h1>
+<div class="menubar3">
+    <p class="call"> 040-40164248 | +91 9381646025 </p>
+        <p class="call"> info@prajayatravel.com</p>
+</div>
+</div>
+
+<nav class="nav">
+ <a href="travels%20.html" class="menuibar">Home</a>
+ <a href="#" class="menuibar" >About Us</a>
+ <a href="#" class="menuibar" >Tour Packages</a>
+ <a href="#" class="menuibar" >Services</a>
+ <a href="#" class="menuibar">Contact</a>
+</nav>
+</header>
+ <main>
+   <div id="packMain">
+   <img class="img" id="images" src="tamil.jpg" alt="yatraimg"/>
+      <section id="userOpt">
+         <p><strong id="tour">Tour Code</strong> <span>=</span> <strong>123</strong></p>
+         <p><b>Starting Date</b> <span>=</span> <strong>16/12/2021, Time : 8pm</strong></p>
+         <p><b>Duration</b> <span>=</span> <strong>2 Nights and 3 days</strong></p>
+         <p id="visit"><b>Visiting Places</b> <span>=</span> <b id="acco">Trichy - <b id="userAdd"></b> Thanjavur - Kumbakonam</b></p>
+         <div id="selectOpt">
+        <figure id="img1">
+         <img src="5starRoom.jpg">
+         <figcaption><b class="text">5 Star Deleuxe Room  &#8377;<i id="roomRent">4999</i>/-</b></figcaption>
+          <address>
+             TamilNadu,Jubilee hills,D-No : 10-132;<br>
+            Taj Banjara Hotel
+          </address>
+         </figure>
+        <figure id="img2">
+          <img src="luxuryRoom.jpg">
+         <figcaption><b class="text">Luxury Room  &#8377;<i id="lRoom">3999</i>/-</b></figcaption>
+           <address>
+             TamilNadu,MailRoad,D-No : 10-132;<br>
+            Taj Banjara Hotel
+          </address>
+        </figure>
+       <figure id="img3">
+         <img src="twinRoom.jpg">
+          <figcaption><b class="text">Twin Rooms &#8377;<i id="tRoom">2999</i>/-</b></figcaption>
+           <address>
+            AT Road, TamilNadu , D-No : 12-321;<br>
+            Prajaya Hotel
+          </address>
+       </figure>
+     </div>
+      </section>
+  <div class="add">
+          <label class="accomm">Accommadation</label>
+       <select id="selectRooms">
+      <option  value="">Select Your Options</option>
+      <option value="1" id="vegpo">Five Star Deleuxe Room </option>
+      <option value="2">Luxury</option>
+      <option value="3">Twin Room </option>
+  </select><br><br>
+ <label style="font-size:24px;">How Many Members are going</labe><br><br>
+     <select id="member" style="font-size:25px;">
+        <option disable value="">Select Members </option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select><br><br>
+ <p id="totalSelect"hidden></p>
+  <label style="font-size:25px;">Select Your Additional Places =</label>
+    <select id="userfavplace" style="font-size:25px;">
+        <option disable value="">Select Your Place </option>
+        <option value="1">Meenakshi Temple</option>
+        <option value="2">Nataraja Temple</option>
+        <option value="3">Papanasam Temple</option>
+    </select>
+     <button style="font-size:22px;" id="sum" onclick="userFavPlaces()">Add</button>
+         <p style="font-size:25px;">Cost per person = &#8377;<b style="font-size:23px;" id="money">9999</b>/-</p>
+        <button id="book"><a href="pay.html" >Book Now </a></button>
+  </div>
+   </div>
+ </main>
+  </body>

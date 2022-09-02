@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> payment</title>
+ <link rel="stylesheet" href="payment.css">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+
+<body style="">
+<header>
+<div class="menubar">
+<div class="menubar2"  style="width:10%;">
+<h1 style="color:white;font-size:25px;"> Turbo Travels </h1>
+</div>
+<nav  class="nav" style="justify-content:space-between;">
+ <a href="#" class="menuibar">Home</a>
+ <a href="#" class="menuibar" >About Us</a>
+ <a href="#travelpacakges" class="menuibar">Tour Packages</a>
+ <a href="#" class="menuibar" >Services</a>
+ <a href="#" class="menuibar">Contact</a>
+ <input type="number"   id="userid"    name="userid"     placeholder="enter the booking ID" >
+<span  type="button" data-toggle="modal" data-target="#openbookings"  onclick="showData()"> Booking status </span>
+
+</nav>
+</div>
+</header>
+
+
+<div class= "box">
+  <div class="container1">
+    <div class="title" >Payment details</div>
+    <div class="content">
+   	
+	  <div class="message">
+            <p class="message"   style=" margin-left: 30%;" >Enter the  member <span id="memberno"> no </span> Details</p>
+          </div>
+
+
+      <div class="form" >
+        <div class="user-details">
+        
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input class="enter" type="text" id="name" name="name" placeholder="enter the name"  required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input class="enter"  type="email" id="email" name="email"  placeholder="enter the email"  size="30"   required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input class="enter"  type="number" id="phno" name="phno" placeholder="enter the phone number" required >
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Age</span>
+           <input class="enter"  type="number" id="age" name="age" placeholder="enter your age " required >
+          </div>
+          
+          
+       
+         
+        
+        <div class="input-box"">
+         <span class="details">Gender</span>
+	<select name="gender" id="gender">
+	    <option value="">--Please select a gender--</option>
+	    <option value="male">Male </option>
+	    <option value="female">Female</option>
+	</select>
+        </div>
+        
+        
+          <div class="input-box"">
+         <span class="details">Booking details</span>
+	<select name="bookstatus" id="bookstatus">
+	    <option value="">--Please select a booking status--</option>
+	    <option value="conformed">conformed</option>
+	    <option value="notconformed">notconformed</option>
+	</select>
+        </div>
+        
+        
+        
+        
+        
+       
+        </div>
+        <div class="button">
+          <input type="submit" class="button" onclick="storage()"  value="SUBMIT" >
+          
+        </div>
+      </div>
+      
+    </div>
+
+              <fieldset>
+		<legend  class="p"> Total </legend>
+		<div id="details"></div>
+		<p>Total Summary:</p>
+		  <span> For Single person: <b id="total1">Total </b> </span> <br>
+		  <span> Amount : <b id ="total2" >Total</b><b> X</b> <b id ="quantity"> quantity </b><b>=</b> <b id="totalamount"> Totalamount</b><span>
+		</fieldset>
+   </div>
+      
+      
+      
+      
+      <div id="openbookings" id="popup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+   
+     <div class="modal-header">
+        <h2 style="color:black;margin-top:80px;">Booked details</h2>
+       <button id="wrong2" class="btn" data-dismiss="modal">&times;</button>
+     </div>
+     <div class="modal-body">  
+           
+        <div class="col-sm-12" style=" align-items: center; width:900px  padding: 0% 0% 0% 0%; ">      
+       <div class="row">
+          <div class="col-sm-2" style="background-color: #DBE5FF; padding: 10px;">Name</div>
+           <div class="col-sm-2" style="background-color: #DBE5FF; padding: 10px;">PhoneNumber</div>
+           <div class="col-sm-2" style="background-color: #DBE5FF; padding: 10px;">Age</div>
+            <div class="col-sm-2" style="background-color: #DBE5FF; padding: 10px;">Gender</div>
+            <div class="col-sm-2" style="background-color: #DBE5FF; padding: 10px;">TRIP_CODE</div>
+        </div>
+        <div id="showUsers"></div>
+      </div>     
+     </div>
+     
+     
+    <div class="modal-footer">
+    </div>
+    
+   </div>
+   </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+ <script src="payment.js"></script>
+</body>
+</html>

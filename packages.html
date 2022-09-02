@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travel Packages </title>
+ <link rel="stylesheet" href="packages.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="package.js"></script>
+</head>
+  
+  
+  <body style="background-color:#eee">
+<header>
+<div class="menubar">
+<div class="menubar2"  style="width:10%;" >
+<h1 style="color:white;font-size:25px; "> Turbo Travels </h1>
+</div>
+<nav  class="nav">
+ <a href="#" class="menuibar">Home</a>
+ <a href="#" class="menuibar" >About Us</a>
+ <a href="#travelpacakges" class="menuibar">Tour Packages</a>
+ <a href="#" class="menuibar" >Services</a>
+ <a href="#" class="menuibar">Contact</a>
+ <input type="number"   id="userid"    name="userid"     placeholder="enter the booking ID" >
+<span class="material-icons"   type="button" data-toggle="modal" data-target="#openbookings"  onclick="showData()" > search </span>
+</nav>
+</div>
+</header>
+
+
+
+ <main>
+   <div id="packMain">
+   <img class="img" id="images" src ="https://saradhitcpl.com/wp-content/uploads/2021/03/2.jpeg" style="width:200px height:300px"  alt="yatraimg"/>
+      <section id="userOpt">
+         <p><span id="tour">Tour Code</span> <span>=</span> <strong id="tourcode">UO</strong></p>
+         <p>Starting Date <span>=</span> <strong>06/12/2021, Time : 10pm</strong></p>
+         <p>Duration <span>=</span> <strong>3 Nights and 4 days</strong></p>
+         <p>Visiting Places <span>=</span> <b id="acco">Indore - <b id="userAdd"></b> Ujjain - Omkareshwar - Maheshwar - Mandu</b></p>
+         
+     <div>
+   <h2>select the total quantity </h2>
+  <h1 class="heading">
+        <span><label >1</label>  <input type="radio" id="1" name="people count" value="1" checked></span>
+        <span><label>2</label>  <input type="radio"  id="2" name="people count" value="2"></span>
+        <span><label >3</label>  <input type="radio" id="3" name="people count" value="3"></span>
+        <span><label >4</label>  <input type="radio" id="4" name="people count" value="4"></span>
+        <span><label >5</label>  <input type="radio" id="5" name="people count" value="5"></span>
+        <span><label >6</label>  <input type="radio" id="6" name="people count" value="6"></span>
+        <span><label >7</label>  <input type="radio" id="7" name="people count" value="7"></span>
+        <span><label >8</label>  <input type="radio" id="8" name="people count" value="8"></span>
+        <span><label >9</label>  <input type="radio" id="9" name="people count" value="9"></span>
+      
+    </h1>
+        </div>
+
+        
+        
+          <b class="accomm">Accommadation</b>
+   <select id="selectRooms">
+      <option disable value="">Select Your Options</option>
+      <option value="1" id="vegpo">Five Star Deleuxe Room </option>
+      <option value="2">Luxury</option>
+      <option value="3">Twin Room </option>
+  </select>
+  
+ 
+<div class="hotelselect">
+      <div class="hotel1">
+         <figure >
+          <img class="photo" src="5starRoom.jpg">
+           <h3>Taj Banjara Hotel </h3>
+          <figcaption><b class="text">5 Star Deleuxe Room <i id="roomRent">4999</i> &#8377;</b></figcaption>
+           <address>
+              <h3> <i class="fas fa-map-marker-alt"></i> Hyderabad,Jubilee hills,D-No : 10-132;<br></h3>
+           
+            <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+          </address>
+              
+         </figure>
+       </div>
+         
+       <div class="hotel2">
+        <figure >
+          <img class="photo" src="luxuryRoom.jpg">
+            <h3>Taj Banjara Hotel</h3>
+         <figcaption><b class="text">Luxury Room <i id="lRoom">3999</i> &#8377;</b></figcaption>
+           <address>
+              <h3> <i class="fas fa-map-marker-alt"></i> Hyderabad,Jubilee hills,D-No : 10-132;<br> </h3>
+          
+             <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+          </address>
+        </figure>
+       </div>
+        
+         <div class="hotel2">
+       <figure >
+         <img class="photo" src="twinRoom.jpg">
+          <h3>Prajaya Hotel</h3>
+          <figcaption><b class="text">Twin Rooms <i id="tRoom">2999</i> &#8377;</b></figcaption>
+           <address>
+           <h3> <i class="fas fa-map-marker-alt"></i> Hyderabad,Jubilee hills , D-No : 12-321;<br> <h3>
+           
+             <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+          </address>
+       </figure>
+       </div>
+       
+       </div>
+    
+      
+      
+      
+      
+      
+  <div class="add">
+  <!.... <input type="text" id="additional packages" placeholder="Add Ur Fav Place"/> 
+  <label style="font-size:25px;"> Select a extra pacage </label>
+    <select id="userfavplace" style="font-size:25px;">
+        <option disable value="">Select Your Place </option>
+        <option value="1">Hyderbad</option>
+        <option value="2">Golkonda</option>
+        <option value="3">Tankband</option>
+    </select>
+     <button style="font-size:22px;" id="sum" onclick="userFavPlaces()">Add</button>
+         <p style="font-size:20px;">TotalCost = <b style="font-size:23px;" id="money">9999</b>&#8377;</p>
+        <button id="book"><a href="payment.html" >Book Now </a></button>
+  </div>
+   </div>
+ </main>
+  </body>
+ <a href="#" class="menuibar" >About Us</a>
+ 
+ </html>

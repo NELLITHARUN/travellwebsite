@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+:root
+{
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid #130f40;
+}
+
+
+*
+{
+transition:all.2s linear;
+font-family:'poppins',sans-serif';
+}
+
+
+
+
+
+.menuibar:hover{
+color:orange;
+text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hotelselect
+          {
+            position: relative;
+            width:100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;       
+            justify-content:space-between;
+             
+           }
+        
+        
+       .hotel1,.hotel2,.hotel3
+       {
+            position: relative;
+            max-width:75%;
+            display: flex;
+            background-color:white; 
+            border-radius: 10px; 
+        }
+
+
+
+
+
+nav
+{
+color:white;
+width:100%;
+margin-left:-100px;
+margin-top:20px;
+}
+
+.menubar{
+width: 100%;
+height:10%;
+display: flex;
+justify-content:space-between;
+align-items: center;
+background-color: black;
+position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+ margin-top: -1.5em;
+  }
+  
+
+
+
+
+
+
+
+
+
+.photo
+{
+width:80%;
+}
+
+
+
+.heading{
+  text-align: center;
+  padding:3%;
+}
+
+.heading span{
+  font-size: 1.4rem;
+  background:rgba(255, 165, 0,.2);
+  color:orange;
+  border-radius: .5rem;
+  padding:1%;
+  
+}
+
+
+.stars ,i{
+  font-size:1.7rem;
+  color:orange;
+}
+
+
+
+
+.menuibar:hover{
+color:orange;
+text-decoration:none;
+}
+
+
+.nav a {
+  color:black;
+}
+
+
+.nav a {
+  color:white;
+}
+
+.menuibar
+{ 
+color :white;
+}
+
+.nav 
+{
+       
+	padding :10px 20px 10px 50px;
+	font-size:20px;
+       text-align:end;
+}
+
+
+.menuibar
+{
+
+padding:10px 20px 10px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+#qtyes{
+ font-size:22px;
+}
+h1{
+  font-size:30px;
+  margin-bottom:-30px;
+  possition
+  text-align:center center;		
+}
+#packMain{
+  height:100%;
+  width:100%;
+ 
+  margin:5px 10px 5px 10px;
+}
+#addPlace{
+  padding:5px;
+  margin:10px;
+}
+#userOpt{
+  text-align:center;
+  background-color:#f6f6f6;
+  padding:5px;
+}
+p{
+  padding:10px;
+  margin-right:20px;
+}
+span{
+  margin-left:20px;
+  
+}
+strong{
+   margin-left:50px;
+ }
+#tour{
+ margin-left:-155px;
+ }
+ 
+#images{
+   width:40%;
+   height:10%;
+   margin-left:30%;
+   margin-top:8%;
+   
+ }
+
+
+
+
+
+figcaption{
+  margin-left:180px;
+  margin-top:20px;
+}
+address{
+  font-size:20px;
+}
+.add{
+ background-color:#f6f6f6;
+ text-align:center;
+ padding;10px;
+}
+.text{
+ font-size:20px;
+ margin-left:-140px;
+ margin-right:50px;
+}
+#selectRooms{
+  font-size:18px;
+  margin-top:10px;
+}
+.accomm{
+ font-size:24px;
+ text-align:center;
+}
+
+#userfavplace{
+ font-size:18px;
+}
+#sum{
+ font-size:18px;modal fade
+}
+#book{
+  font-size:18px;
+  background-color:orange;
+  color:black;
+  padding:5px;
+  margin-top:-30px;
+}
+#book:hover{
+  font-size:20px;
+}
+header{
+  background-color:#DCE0D9;
+}
+
+.menuibar
+{ 
+color :white;
+}
+.call,h1
+{
+color:white;
+}
+.para{
+text-align:center;
+}
+p
+{
+  font-family:Arial
+}
+
+.menuibar
+{
+
+padding:10px 20px 10px 50px;
+}
